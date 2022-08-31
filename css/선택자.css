@@ -1,0 +1,127 @@
+.m-parents p{
+  background-color: yellow;
+}
+
+.m-parents>p{
+  border: 3px solid tomato ;
+}
+
+/* 일반 동위 선택자 */
+.m-sibling ~ p{
+  background-color: beige;
+}
+
+/* 인접 동위 선택자 : 바로 뒤의 요소의 디자인을 바꾸고 싶을 때 */
+.m-sibling + p{
+  background-color: chocolate;
+}
+
+.test-ul li{
+  float: left;
+  padding: 0 20px;
+  list-style: none;
+  border-right: 3px solid black;
+}
+
+.test-ul .last-li + li{
+  border: none;
+}
+
+a:link{color: red;}
+a:visited{color: blue;}
+a:hover{color: yellow;}
+a:active{color: green}
+
+/* 포커스를 가질 수 있는 요소에 사용하는 동적의사 클래스 */
+.focus-input:focus{
+  background-color: coral;
+}
+
+/* 체크 상태일때, span의 배경색을 변경. 인접 동위 선택자 사용 */
+.checked-box:checked + span{
+  background-color: red;
+}
+/* disabled 일때 span의 글자색 변경 */
+.disabled-box:disabled +span{
+  color: gray;
+}
+.enabled-box:enabled + span{
+  background-color: blue;
+}
+
+/* 구조의사 클래스 */
+.table-child{
+  border-collapse: collapse;
+}
+.table-child tr:first-child{
+  background-color: aqua;
+}
+.table-child tr td:first-child {
+  background-color: blue;
+}
+.table-child tr:nth-child(2n) {
+  background-color: yellow;
+}
+
+.of-type li:first-of-type{
+  background-color: aqua;
+}
+
+.of-type .type:first-of-type {
+  background-color: blue;
+}
+
+.first-letter::first-letter{
+  font-size: 2em;
+}
+
+.first-line::first-line{
+  color: red;
+}
+
+.before::before{
+  content: "새로운 내용 입니다.";
+  font-weight: bold;
+  color: green;
+}
+
+/* content의 값이 비었을 경우 display값을 inline-block으로 두어 크기 설정 */
+.after::after{
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: yellowgreen;
+  border-radius: 50%;
+}
+
+.selection::selection{
+  background-color: black;
+  color: white;
+}
+
+input[type="button"] + span{
+  background-color: blue;
+}
+input[type="checkbox"]+span {
+  background-color: aqua;
+}
+input[type="radio"]+span{
+  color: green;
+  font-weight: bolder;
+}
+
+/* 
+not의사 클래스는 앞의 요소를 붙여 지정하지 않고
+괄호 안의 제외할 태그나 선택자를 입력
+*/
+.not :not(p){
+  color: blueviolet;
+}
+
+.color{
+  color: coral;
+}
+h1.color{
+  color: violet;
+}

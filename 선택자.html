@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/선택자.css">
+  <title>선택자</title>
+</head>
+<body>
+  <h1>결합 선택자</h1>
+  <div class="m-parents">
+    <p>자식 : m-parents class 바로 아래 tag</p>
+    <div>
+      <p>자손 : m-parents class에 속한 tag</p>
+    </div>
+  </div>
+
+  <hr>
+
+  <h1>동위 선택자</h1>
+  <h2>일반 동위 선택자와 인접 동위 선택자</h2>
+  <div>
+    <p class="m-sibling">현재 요소</p>
+    <p>인접 동위 요소(동위 : 동등한 위치에 있는 요소)</p>
+    <p>일반 동위 요소</p>
+  </div>
+  <div>
+    <p>동위요소 아님</p>
+  </div>
+
+  <h2>인접 동위 선택자 예시</h2>
+  <ul class="test-ul">
+    <li>A</li>
+    <li class="last-li">B</li>
+    <li>C</li>
+  </ul>
+
+  <hr>
+
+  <h1>의사 클래스</h1>
+  <h2>동적 의사 클래스</h2>
+  <a href="http://www.">링크에 걸리는 동적 의사 클래스</a>
+  <br>
+  <input class="focus-input" type="text">포커스를 가지는 요소의 동적 의사 클래스
+
+  <hr>
+  <h2>상태 의사 클래스</h2>
+  <input class="checked-box" type="checkbox">
+  <span>상태의사 클래스로 꾸며준 체크박스</span><br>
+
+  <input type="checkbox" class="disabled-box" disabled>
+  <span>disabled 상태일때 꾸며준 체크박스</span><br>
+  
+  <input type="checkbox" class="enabled-box" enabled>
+  <span>enabled 상태일때 꾸며준 체크박스</span>
+
+  <table class="table-child">
+    <tr>
+      <td>내용1</td>
+      <td>내용2</td>
+    </tr>
+    <tr>
+      <td>내용1</td>
+      <td>내용2</td>
+    </tr>
+    <tr>
+      <td>내용1</td>
+      <td>내용2</td>
+    </tr>
+    <tr>
+      <td>내용1</td>
+      <td>내용2</td>
+    </tr>
+  </table>
+
+  <h2>of-type</h2>
+  <ol class="of-type">
+    <a>1번째</a>
+    <li>2번째</li>
+    <li class="type">3번째</li>
+    <li>4번째</li>
+  </ol>
+  <ol class="of-type">
+    <a>1번째</a>
+    <li>2번째</li>
+    <li class="type">3번째</li>
+    <li>4번째</li>
+  </ol>
+
+  <hr>
+
+  <h2>의사요소</h2>
+  <p class="first-letter">첫 글자만 선택</p>
+  <p class="first-line">
+    first line <br>
+    second line
+  </p>
+  <p class="before">앞에 새로운 내용이 추가됩니다</p>
+  <p class="after">뒤에 새로운 내용이 추가됩니다</p>
+  <p class="selection">드래그한 부분이 색반전</p>
+
+  <hr>
+  <h2>속성 선택자</h2>
+  <input type="button"><span>button type</span><br>
+  <input type="checkbox"><span>checkbox type</span><br>
+
+  <!-- input type="radio"생성, 뒤의 span태그의 글자색 변경 -->
+  <input type="radio"><span>radio type</span><br>
+
+  <hr>
+  <h2>기타 의사 클래스</h2>
+  <p>내용을 작성하였습니다.</p>
+  <div>div태그안에 작성하였습니다.</div>
+
+  <!-- p를 제외하고 색 바꾸기 -->
+  <div class="not">
+    <h1>동일한 색상을 넣을 태그</h1>
+    <h2>동일한 색상을 넣을 태그</h2>
+    <p>제외할 태그</p>
+  </div>
+
+  <hr>
+  <h2>특정요소의 클래스</h2>
+  <h3 class="color">color class</h3>
+  <h1 class="color">h1 color class</h1>
+</body>
+</html>

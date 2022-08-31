@@ -1,0 +1,35 @@
+.first-list li{
+  background-color: yellowgreen;
+}
+
+.focus-input:focus{
+  font-weight: bold;
+  color: violet;
+}
+
+.second-list{
+  list-style: none;
+}
+
+.second-list li input:checked + span{
+  text-decoration: line-through;
+}
+
+.third-list li:nth-child(2n){
+  background-color: violet;
+}
+.third-list li:nth-child(2n-1) {
+  background-color: lightpink;
+}
+
+.box{
+  border: 2px solid red;
+}
+
+.box ul {
+  list-style: none;
+}
+
+.box ul li a{
+  text-decoration: none;
+}

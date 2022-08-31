@@ -1,0 +1,34 @@
+.main-contents{
+  border: 2px solid red;
+}
+
+.main-contents ul{
+  list-style: none;
+}
+
+.main-contents li a{
+  text-decoration: none;
+}
+
+.hashtag ul{
+  list-style: none;
+  position: fixed;
+  right: 0;
+  
+}
+.hashtag ul li{
+  float: left;
+  background-color: blue;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  margin: 0 10px;
+}
+
+.messages p::after{
+  content:"N";
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  padding: 0 4px;
+}

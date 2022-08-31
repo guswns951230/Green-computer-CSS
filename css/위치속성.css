@@ -1,0 +1,26 @@
+.m-box{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  display: inline-block;
+}
+
+.m-position-static{
+  position: static;
+}
+
+.m-position-relative{
+  position: relative;
+  left: 30px;
+}
+
+.m-position-fixed{
+  position: fixed;
+  top: 30px; right: 150px;
+  z-index: 100;
+}
+
+.m-position-absolute{
+  position: absolute;
+  top : 800px; left: 400px;
+}

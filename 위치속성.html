@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/위치속성.css">
+  <title>위치속성</title>
+</head>
+<body>
+  <h1>display</h1>
+  <p>내용1</p>
+  <!-- visibility:hidden는 화면에 존재하지만 내용이 보이지 않음 -->
+  <p style="visibility: hidden;">내용2</p>
+  <!-- display:none은 화면에 존재하지 않음 -->
+  <p style="display: none;">내용3</p>
+  <p style="opacity: 0.5;">내용4</p>
+
+  <hr>
+
+  <h1>Position</h1>
+  <h2>Static Position</h2>
+  <div class="m-box m-position-static">static position div tag</div>
+  <div class="m-box m-position-static">static position div tag</div>
+  <p>
+    position을 설정해주지 않았을 때 기본 값 <br>
+    이전 요소가 block 이라면 다음 줄에 위치 <br>
+    이전 요소가 inline 이라면 옆에 위치
+  </p>
+
+  <h2>Relative Position</h2>
+  <div class="m-box m-position-relative">relative position div tag</div>
+  <p>
+    relative만 사용 시 static과 동일 <br>
+    left/right/top/bottom을 이용해 위치 조정 가능 <br>
+    현재 위치에서 상대적으로 이동
+  </p>
+
+  <h2>Fixed Position</h2>
+  <div class="m-box m-position-fixed">fixed position div tag</div>
+  <p>
+    fixed는 브라우저 화면상에서 고정 <br>
+    left/right/top/bottom을 이용해 위치 조정 가능
+  </p>
+
+  <h2>Absolute Position</h2>
+  <div class="m-box m-position-absolute">absolute position div tag</div>
+  
+  <div style="width: 100%; height: 900px; background-color: bisque;">
+    <div class="m-box m-position-absolute">absolute position div tag</div>
+    <div class="m-box m-position-relative">relative position div tag</div>
+  </div>
+  <p>
+    absolute는 화면상에 절대값으로 출력되는 위치 <br>
+    bottom은 값이 달라지기 때문에, top/right 위주로 위치를 지정 <br>
+    다른 태그안에 들어가 있어도 위치가 바뀌지 않는다
+    relative는 static의 위치에서 이동하기 때문에 <br>
+    다른 태그에 있을 때, 그 태그의 위치에 따라 relative의 위치가 바뀐다
+  </p>
+</body>
+</html>

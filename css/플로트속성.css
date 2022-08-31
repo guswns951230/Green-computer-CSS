@@ -1,0 +1,50 @@
+.header{
+  border: 3px solid orange;
+}
+
+.nav{
+  border: 3px solid green;
+  float: left;
+  width: 30%;
+}
+
+.section{
+  clear: both;
+  border: 3px solid yellow;
+}
+
+.m-box{
+  background-color: burlywood;
+  width: 300px;
+  height: 300px;
+  overflow: auto;
+}
+
+.float-box{
+  background-color: darksalmon;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.layout{
+  border: 3px solid brown;
+  text-align: center;
+}
+.layout-header{
+  border: 3px solid yellow;
+}
+.layout-nav{
+  border: 3px solid magenta;
+  width: 25%;
+  float: left;
+}
+.layout-section{
+  border: 3px solid skyblue;
+  width: 73%;
+  margin-left: 26%;
+}
+.layout-footer{
+  border: 3px solid aqua;
+  clear: both;
+}
