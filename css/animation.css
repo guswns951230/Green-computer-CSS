@@ -44,17 +44,56 @@
 }
 
 .animation-count{
-  animation: rotation 2s;
+  animation: rotation 3s;
   animation-iteration-count: 2;
   animation-timing-function: linear;
 }
 @keyframes rotation{
-  0%{transform: rotate(0deg) translateX(0px);}
-  50%{transform: rotate(180deg) translateX(200px);}
-  100%{transform: rotate(360deg) translateX(0px);}
+  0%{transform: rotate(0deg);}
+  50%{transform: rotate(180deg);}
+  100%{transform: rotate(360deg);}
 }
 
 .animation-direction:hover{
   animation: animation 3s;
   animation-direction: reverse;
+}
+
+.animation-test{
+  box-shadow: 0 0 5px black;
+  animation: animation-test 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes animation-test{
+  0%{
+    transform: rotate(0deg);
+  }
+  25%{
+    transform: rotate(90deg); 
+    border-top-right-radius: 50%;
+    border-top-left-radius: 0; 
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  50%{
+    transform: rotate(180deg); 
+    border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+  }
+  75%{
+    transform: rotate(270deg);
+    border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 0;
+  }
+  100%{
+    transform: rotate(360deg);
+    border-top-right-radius: 50%;
+      border-top-left-radius: 50%;
+      border-bottom-left-radius: 50%;
+      border-bottom-right-radius: 50%;
+  }
 }
