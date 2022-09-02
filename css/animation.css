@@ -97,3 +97,14 @@
       border-bottom-right-radius: 50%;
   }
 }
+
+.text-box{
+  position: absolute;
+  margin-top: -200px;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 80px 0;
+  font-size: 1.5em;
+}
