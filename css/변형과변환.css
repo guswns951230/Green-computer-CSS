@@ -72,3 +72,46 @@ delay와 duration은 값을 하나만 주면
 .transition-check:checked + span{
   color: coral;
 }
+
+.menu {
+  display: inline-block;
+}
+
+.menu:hover .menu-icon {
+  border-top: 3px solid coral;
+}
+
+.menu-icon {
+  box-sizing: border-box;
+  margin: 3.5px;
+  width: 20px;
+  height: 3px;
+  border-top: 3px solid black;
+  transition: border-top 1s;
+}
+
+.line1 {
+  transform-origin: left top;
+  transition: transform 1s;
+}
+
+.menu:hover .line1 {
+  transform: rotate(45deg);
+}
+
+.line3 {
+  transform-origin: left bottom;
+  transition: transform 1s;
+}
+
+.menu:hover .line3 {
+  transform: rotate(-45deg);
+}
+
+.line2 {
+  transition: opacity 1s;
+}
+
+.menu:hover .line2 {
+  opacity: 0;
+}
