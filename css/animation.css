@@ -1,0 +1,60 @@
+.animation{
+  border: 3px solid coral;
+  /* animation 속성을 통해 이름과 시간을 정해준다. */
+  animation: animation 3s;
+}
+/* animation을 사용하기 위한 key frame */
+@keyframes animation{
+  /* 시작 디자인 */
+  from{margin-left: 100%;}
+  /* 마지막 디자인 */
+  to{margin-left: 0;}
+}
+
+.animation-hover{
+  border: 3px solid coral;
+}
+
+.animation-hover:hover{
+  animation: animation-hover 3s;
+}
+@keyframes animation-hover{
+  from{margin-left: 0;}
+  to{margin-left: 50%;}
+}
+
+.animation-border{
+  border: 3px solid red;
+  animation: animation-border 3s;
+}
+
+@keyframes animation-border{
+  0%{border-color: red;}
+  30%{border-color: orange;}
+  60%{border-color: yellow;}
+  90%{border-color: green;}
+  100%{border-color: blue;}
+}
+
+.a-box{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  background-color: greenyellow;
+}
+
+.animation-count{
+  animation: rotation 2s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+}
+@keyframes rotation{
+  0%{transform: rotate(0deg) translateX(0px);}
+  50%{transform: rotate(180deg) translateX(200px);}
+  100%{transform: rotate(360deg) translateX(0px);}
+}
+
+.animation-direction:hover{
+  animation: animation 3s;
+  animation-direction: reverse;
+}

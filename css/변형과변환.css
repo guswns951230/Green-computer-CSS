@@ -115,3 +115,24 @@ delay와 duration은 값을 하나만 주면
 .menu:hover .line2 {
   opacity: 0;
 }
+
+/* hover 시 image 확대 */
+.img-box{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  transition: background-color 1s;
+}
+
+.img-box:hover{
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.image{
+  width: 350px;
+  transition: transform 1s;
+}
+.img-box:hover .image{
+  transform: scale(1.2);
+}
