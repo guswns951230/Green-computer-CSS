@@ -1,0 +1,48 @@
+/* Header */
+.flex{
+  display: flex;
+}
+.header{
+  justify-content: space-between;
+}
+
+/* tag flex box로 정렬 */
+.tag>ul{
+  display: flex;
+  list-style: none;
+}
+.tag>ul>li{
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 15px;
+  padding: 3px 5px;
+  margin: 5px;
+}
+
+/* main의 flex box 정렬 */
+.main{
+  flex-wrap: wrap;
+}
+.section1{
+  width: 100%;
+  height: 300px;
+  background-color: aquamarine;
+}
+.section2{
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.section2>div{
+  max-width: 300px;
+  min-width: 200px;
+  height: 100px;
+  background-color: cadetblue;
+}
+
+.section3{
+  width: 100%;
+  height: 200px;
+  background-color: bisque;
+}

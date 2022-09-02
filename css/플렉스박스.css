@@ -1,0 +1,40 @@
+.flex-container{
+  display: flex;
+  width: 100%;
+  background-color: darkgray;
+}
+.flex-item{
+  width: 100px;
+  height: 100px;
+  background-color: burlywood;
+  border: 1px solid black;
+}
+
+/* 수평방향 정렬 */
+.justify-between{justify-content: space-between;}
+.justify-around{justify-content: space-around;}
+.justify-right{justify-content: right;}
+
+/* 수직 방향 정렬 */
+.height{height: 250px;}
+.align-center{align-items: center;}
+.align-flex-end{align-items: flex-end;}
+.align-stretch{align-items: stretch;}
+
+/* 여러줄 출력 */
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+/*
+  flex box에서 여러줄 출력 시, flex line 정렬,
+  수직방향에 공간 필요 
+*/
+.align-content{align-content: center;}
+
+.f-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+}

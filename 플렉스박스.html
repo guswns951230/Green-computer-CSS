@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/플렉스박스.css">
+  <title>flex box</title>
+</head>
+<body>
+  <h1>Flex box</h1>
+  <div class="flex-container justify-between">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <p>flex box container에서 수평방향으로 정렬 : space-between</p>
+
+  <div class="flex-container justify-around">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <p>flex item들이 margin이 있는 것 처럼 정렬 : space-around</p>
+
+  <div class="flex-container justify-right">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <p>right를 이용해 오른쪽에 정렬</p>
+
+  <div class="flex-container height align-center">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <p>align-item : center를 이용해 수직 중앙 정렬</p>
+
+  <div class="flex-container height align-flex-end">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <p>align-item : flex-end를 이용해 수직방향 아래 출력</p>
+
+  <div class="flex-container height align-stretch">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <p>align-item : stretch를 이용해 수직방향 위 출력</p>
+
+  <h1>flex box 여러줄 출력</h1>
+  <div class="flex-container height flex-wrap justify-between">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+  <p>flex container의 wrap 속성을 사용하여 줄바꿈</p>
+
+  <div class="flex-container height flex-wrap align-content">
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+    <div class="flex-item"></div>
+  </div>
+
+  <hr>
+  <!-- 
+    ul(flex container), li(flex item)
+    list를 가로로 출력, 공간이 부족하면 여러줄로 출력
+  -->
+  <ul class="f-container">
+    <li class="f-item">item</li>
+    <li class="f-item">item</li>
+    <li class="f-item">item</li>
+    <li class="f-item">item</li>
+    <li class="f-item">item</li>
+    <li class="f-item">item</li>
+    <li class="f-item">item</li>
+  </ul>
+</body>
+</html>

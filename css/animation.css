@@ -108,3 +108,10 @@
   padding: 80px 0;
   font-size: 1.5em;
 }
+
+.resize-box{
+  width: 200px;
+  height: 200px;
+  background-color: darkorange;
+  resize: both;
+}
