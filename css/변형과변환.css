@@ -27,3 +27,48 @@
 }
 .transition-transform{transition: transform 1s;}
 .transition-transform:hover{transform: scale(1.5) translate(100px,0) rotate(180deg);}
+.transition-delay{transition: opacity 1s; transition-delay: 0.3s;}
+.transition-delay:hover{opacity: 0;}
+
+/* 
+delay와 duration은 값을 하나만 주면
+시작/끝의 delay와 duration이 동일하게 들어감
+원한다면 값을 따로 줄 수 있다.
+*/
+.transition-delay-input{transition: background-color 0s;}
+.transition-delay-input:focus{
+  background-color: coral;
+  transition-duration: 1s;
+  transition-delay: 1s;
+}
+
+.transition-timing-linear{
+  transition: transform 1s;
+  transition-timing-function: linear;
+}
+.transition-timing-linear:hover{
+  transform: translateX(100px);
+}
+
+.transition-timing-ease {
+  transition: transform 1s;
+  transition-timing-function: ease;
+}
+.transition-timing-ease:hover {
+  transform: translateX(100px);
+}
+
+.transition-border{
+  box-sizing: border-box;
+  transition: border 1s;
+}
+.transition-border:hover{
+  border: 5px solid coral;
+}
+
+.transition-check + span{
+  transition: color 1s;
+}
+.transition-check:checked + span{
+  color: coral;
+}
